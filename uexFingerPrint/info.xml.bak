@@ -3,7 +3,7 @@
     <plugin
         uexName="uexFingerPrint" version="4.1.1" build="1">
         <info>1:(依赖引擎4.1.7)系统指纹识别功能添加取消指纹识别</info>
-        <build>0:(依赖引擎4.1.7)系统指纹识别功能</build>
+        <info>0:(依赖引擎4.1.7)系统指纹识别功能</info>
     </plugin>
 
 </uexplugins>

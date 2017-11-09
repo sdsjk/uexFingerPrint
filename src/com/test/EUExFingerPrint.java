@@ -116,7 +116,12 @@ public class EUExFingerPrint extends EUExBase {
             }
         });
     }
+    public void cancle(String[] params){
+        if(mFingerprintIdentify != null){
+            mFingerprintIdentify.cancelIdentify();
+        }
 
+    }
     private void callbackInit(int error){
         callbackToJs(Integer.parseInt(cbInitFunId), false, error);
     }
