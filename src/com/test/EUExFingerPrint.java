@@ -19,6 +19,7 @@ public class EUExFingerPrint extends EUExBase {
     private static final int ERROR_DISABLE_FINGERPRINT = 3;
     private static final int ERROR_NO_INIT = 4;
     private static final int ERROR_NOT_MATCH = 5;
+    private static final  int ERROR_CANCLE_MAXTIME=6;
 
     public EUExFingerPrint(Context context, EBrowserView eBrowserView) {
         super(context, eBrowserView);
@@ -112,7 +113,7 @@ public class EUExFingerPrint extends EUExBase {
 
             @Override
             public void onFailed() {
-                callbackAuthenticate(EUExCallback.F_C_FAILED, "识别失败");
+                callbackAuthenticate(ERROR_CANCLE_MAXTIME, "指纹操作已取消或者达到次数达到上限");
             }
         });
     }
